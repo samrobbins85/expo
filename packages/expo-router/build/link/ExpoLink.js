@@ -51,6 +51,9 @@ function ExpoLink(props) {
 function ExpoLinkImpl(props) {
     const isPreview = (0, PreviewRouteContext_1.useIsPreview)();
     const href = (0, useZoomHref_1.useZoomHref)(props);
+    if (props.prefetch) {
+        console.log('href for prefetch', href);
+    }
     const shouldUseLinkWithPreview = process.env.EXPO_OS === 'ios' && isLinkWithPreview(props) && !isPreview;
     if (shouldUseLinkWithPreview) {
         return <LinkWithPreview_1.LinkWithPreview {...props} href={href} hrefForPreviewNavigation={props.href}/>;
