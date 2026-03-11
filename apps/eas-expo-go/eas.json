@@ -18,7 +18,7 @@
           "EXPO_ROOT_DIR": "/home/expo/workingdir/build",
           "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
           "EAS_BUILD_DISABLE_BUNDLE_JAVASCRIPT_STEP": "1",
-          "LC_ALL": "en_US.UTF-8"
+          "LC_ALL": "C.UTF8"
         }
       },
       "ios": {
